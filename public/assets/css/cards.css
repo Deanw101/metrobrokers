@@ -1,0 +1,49 @@
+#allCardsContainer {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.eachCard {
+    background: #fff;
+    border-radius: 10px;
+    min-height: 220px;
+    max-width: 350px;
+    position: relative;
+    margin: 10px;
+}
+
+.cardContent {
+    display: flex;
+    padding: 0 30px 0 0;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap);
+
+.cardTitle {
+    line-height: 1.2;
+    font-size: 1.5em;
+    font-family: "Palanquin", sans-serif;
+        font-weight: bold;
+        padding-top: 30px;
+        margin-bottom: 0px;
+}
+
+.cardSubTitle {
+    font-size: 14px;
+    color: #151926;
+      font-family: "Palanquin", sans-serif;
+
+}
+
+.cardText {
+    line-height: 1.6;
+    font-weight: normal;
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.83, 0, 0.18, 0.78);
+      font-family: "Palanquin", sans-serif;
+      padding-top: 8px;
+}
