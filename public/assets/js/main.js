@@ -115,6 +115,61 @@ function getFormDetails() {
   return values;
 }
 
+$('#submitFormTwo').on('click', (e) => {
+  event.preventDefault();
+  event.stopPropagation();
+  const values = getFormDetails();
+console.log(values);
+    if (values.office == 2700){
+      const otherNetProfit = values.comVal * values.ffee * values.split - values.miscFees;
+      const franFee = values.comVal - values.comVal * values.ffee;
+      const netProfit = values.comVal*0.9 - values.office - values.miscFees - 1500;
+      const otherNetProfitb = otherNetProfit.toFixed(0);
+      const netProfitb = netProfit.toFixed(0);
+      const otherNetProfitc = otherNetProfitb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      const netProfitc = netProfitb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      console.log(otherNetProfitc);
+      console.log(netProfitc);
+
+      $("#otherP").text('$' + otherNetProfitc);
+      $("#metroP").text('$' + netProfitc);
+      $("#franFeeT").text('Franchise Fee: ' + franFee);
+
+      const difference = netProfit - otherNetProfit;
+      const differenceb = difference.toFixed(0);
+      const differencec = differenceb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      console.log(differencec);
+      $("#calcDiff").text('$' + differencec);
+      $(".green").css("color", "#28a745");
+    } else {
+      const otherNetProfit = values.comVal * values.ffee * values.split - values.miscFees;
+      const franFee = values.comVal - values.comVal * values.ffee;
+      const netProfit = values.comVal - values.office - values.miscFees - 1500;
+      const otherNetProfitb = otherNetProfit.toFixed(0);
+      const netProfitb = netProfit.toFixed(0);
+      const otherNetProfitc = otherNetProfitb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      const netProfitc = netProfitb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      console.log(otherNetProfitc);
+      console.log(netProfitc);
+
+      $("#otherP").text('$' + otherNetProfitc);
+      $("#metroP").text('$' + netProfitc);
+      $("#franFeeT").text('Franchise Fee: $' + franFee);
+
+
+      const difference = netProfit - otherNetProfit;
+      const differenceb = difference.toFixed(0);
+      const differencec = differenceb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      console.log(differencec);
+      $("#calcDiff").text('$' + differencec);
+      $("#calcDiff").css("color", "#28a745");
+      $("#green").css("color", "#28a745");
+      $("#otherP").css("color", "#ff4040");
+      $("#metroP").css("color", "#33ab4f");
+    }
+
+});
+
 $('#submitForm').on('click', (e) => {
   event.preventDefault();
   event.stopPropagation();

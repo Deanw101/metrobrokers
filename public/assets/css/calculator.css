@@ -134,11 +134,19 @@ transition: 0.5s;
   left: 0;
   width: 50%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0);
   pointer-events: none;
 
 }
 
+.areaH {
+  font-size: 24px;
+    color: #000000;
+    line-height: 1.6;
+    margin-top: 0rem;
+    font-weight: 600;
+    text-align: center;
+}
 
 .metrocard {
   background: #951111!important;
@@ -213,6 +221,21 @@ transition: 0.5s;
           #submitForm {
             position: relative;
             padding: 8px 20px;
+            background: #1a5ea9!important;
+            margin-top: 15px;
+            border-radius: 26px!important;
+            text-decoration: none;
+            font-weight: 600;
+            color: #fff;
+            box-shadow: 0 10px 20px rgb(0 0 0 / 52%);
+            letter-spacing: 0.3px;
+            width: 187px;
+            margin: 0px 0 0px 0!important;
+          }
+
+          #submitFormTwo {
+            position: relative;
+            padding: 8px 20px;
             background: #95101185!important;
             margin-top: 15px;
             border-radius: 26px!important;
@@ -222,7 +245,7 @@ transition: 0.5s;
             box-shadow: 0 10px 20px rgb(0 0 0 / 52%);
             letter-spacing: 0.3px;
             width: 187px;
-            margin: 25px 0 10px 0!important;
+            margin: 0px 0 0px 0!important;
           }
 
           #emailInfo {
