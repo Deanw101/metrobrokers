@@ -16,6 +16,14 @@
     margin: 10px;
 }
 
+
+
+@media (max-width:861px) {
+  .mobilem {
+    transform: translateY(-90px)!important;
+  }
+}
+
 .cardContent {
     display: flex;
     padding: 0 30px 0 0;
