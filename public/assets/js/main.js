@@ -121,7 +121,7 @@ $('#submitFormTwo').on('click', (e) => {
   const values = getFormDetails();
 console.log(values);
     if (values.office == 2700){
-      const otherNetProfit = values.comVal * values.ffee * values.split - values.miscFees;
+      const otherNetProfit = values.comVal * values.ffee * values.split - values.officeFees - values.miscFees;
       const franFee = values.comVal - values.comVal * values.ffee;
       const netProfit = values.comVal*0.9 - values.office - values.miscFees - 1500;
       const otherNetProfitb = otherNetProfit.toFixed(0);
@@ -142,7 +142,7 @@ console.log(values);
       $("#calcDiff").text('$' + differencec);
       $(".green").css("color", "#28a745");
     } else {
-      const otherNetProfit = values.comVal * values.ffee * values.split - values.miscFees;
+      const otherNetProfit = values.comVal * values.ffee * values.split - values.officeFees - values.miscFees;
       const franFee = values.comVal - values.comVal * values.ffee;
       const netProfit = values.comVal - values.office - values.miscFees - 1500;
       const otherNetProfitb = otherNetProfit.toFixed(0);
@@ -176,7 +176,7 @@ $('#submitForm').on('click', (e) => {
   const values = getFormDetails();
 console.log(values);
     if (values.office == 2700){
-      const otherNetProfit = values.comVal * values.ffee * values.split - values.miscFees;
+      const otherNetProfit = values.comVal * values.ffee * values.split - values.officeFees - values.miscFees;
       const franFee = values.comVal - values.comVal * values.ffee;
       const netProfit = values.comVal*0.9 - values.office - values.miscFees - 1500;
       const otherNetProfitb = otherNetProfit.toFixed(0);
@@ -197,7 +197,7 @@ console.log(values);
       $("#calcDiff").text('$' + differencec);
       $(".green").css("color", "#28a745");
     } else {
-      const otherNetProfit = values.comVal * values.ffee * values.split - values.miscFees;
+      const otherNetProfit = values.comVal * values.ffee * values.split - values.officeFees - values.miscFees;
       const franFee = values.comVal - values.comVal * values.ffee;
       const netProfit = values.comVal - values.office - values.miscFees - 1500;
       const otherNetProfitb = otherNetProfit.toFixed(0);

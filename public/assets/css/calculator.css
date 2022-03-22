@@ -327,6 +327,16 @@ color: #cbcbcb;
   margin-top: 0.07rem!important;
 }
 
+.sp {
+  font-size: 11px!important;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 600;
+  color: #cbcbcb!important;
+  margin-top: 0.07rem!important;
+}
+
+
+
 .officeh {
   font-weight: 800;
   position: absolute;
