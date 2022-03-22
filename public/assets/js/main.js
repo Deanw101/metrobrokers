@@ -140,7 +140,7 @@ console.log(values);
       const differencec = differenceb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       console.log(differencec);
       $("#calcDiff").text('$' + differencec);
-      $(".green").css("color", "#28a745");
+      $(".green").css("color", "rgb(12 139 41)");
     } else {
       const otherNetProfit = values.comVal * values.ffee * values.split - values.officeFees - values.miscFees;
       const franFee = values.comVal - values.comVal * values.ffee;
@@ -163,7 +163,7 @@ console.log(values);
       console.log(differencec);
       $("#calcDiff").text('$' + differencec);
       $("#calcDiff").css("color", "#28a745");
-      $("#green").css("color", "#28a745");
+      $("#green").css("color", "rgb(12 139 41)");
       $("#otherP").css("color", "#ff4040");
       $("#metroP").css("color", "#33ab4f");
     }
@@ -195,7 +195,7 @@ console.log(values);
       const differencec = differenceb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       console.log(differencec);
       $("#calcDiff").text('$' + differencec);
-      $(".green").css("color", "#28a745");
+      $(".green").css("color", "rgb(12 139 41)");
     } else {
       const otherNetProfit = values.comVal * values.ffee * values.split - values.officeFees - values.miscFees;
       const franFee = values.comVal - values.comVal * values.ffee;
@@ -218,7 +218,7 @@ console.log(values);
       console.log(differencec);
       $("#calcDiff").text('$' + differencec);
       $("#calcDiff").css("color", "#28a745");
-      $("#green").css("color", "#28a745");
+      $("#green").css("color", "rgb(12 139 41)");
       $("#otherP").css("color", "#ff4040");
       $("#metroP").css("color", "#33ab4f");
     }

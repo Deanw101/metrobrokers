@@ -152,7 +152,7 @@ transition: 0.5s;
   background: #951111!important;
   border: 2px solid #951011!important;
   border-radius: 15px!important;
-  box-shadow: 0 20px 50px rgb(0 0 0 / 50%)!important;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 25%)!important;
 }
 
 .othercard {
